@@ -45,7 +45,7 @@ def stats(update, context):
             f'<b>├  🎮 Rᴀᴍ : {memory}%</b>\n' \
             f'<b>├  💽 Dɪsᴋ : {disk}%</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>╰──《 ☣️ @drivetalk ☣️ 》</b>'
+            f'<b>╰──《 ☣️ @DoubleT2245 ☣️ 》</b>'
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
 
 
@@ -56,7 +56,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
     buttons.buildbutton("Repo", "https://github.com/repolink")
-    buttons.buildbutton("Channel", "https://t.me/drivetalk")
+    buttons.buildbutton("Channel", "https://t.me/+bTqqrVLVmZU0NWU1")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         if update.message.chat.type == "private" :
